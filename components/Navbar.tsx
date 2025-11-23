@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Terminal, Shield, Brain, Zap, Mail } from 'lucide-react';
@@ -14,9 +15,6 @@ const Navbar: React.FC = () => {
   ];
 
   const isActive = (path: string) => location.pathname === path;
-
-  // Replace this with your actual email
-  const contactEmail = "your.email@gmail.com";
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-cyber-900/90 backdrop-blur-md border-b border-slate-800">
@@ -49,13 +47,13 @@ const Navbar: React.FC = () => {
               ))}
               
               {/* Contact Button */}
-              <a 
-                href={`mailto:${contactEmail}`}
+              <Link 
+                to="/contact"
                 className="ml-4 flex items-center space-x-2 px-4 py-2 rounded-full bg-fox-600 hover:bg-fox-700 text-white text-sm font-medium transition-all shadow-lg shadow-fox-500/20"
               >
                 <Mail className="w-4 h-4" />
                 <span>Contact</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -90,14 +88,14 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             
-            <a 
-              href={`mailto:${contactEmail}`}
+            <Link 
+              to="/contact"
               onClick={() => setIsOpen(false)}
               className="flex items-center space-x-2 block px-3 py-2 rounded-md text-base font-medium text-white bg-fox-600 hover:bg-fox-700 mt-4"
             >
               <Mail className="w-4 h-4" />
               <span>Contact Me</span>
-            </a>
+            </Link>
           </div>
         </div>
       )}

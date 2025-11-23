@@ -1,6 +1,12 @@
 
 import { BlogPost, Project, Skill } from './types';
 
+export const SOCIAL_LINKS = {
+  github: 'https://github.com/BushraSaleem98',
+  linkedin: 'https://www.linkedin.com/in/bushra-saleem-531191245/',
+  email: 'bushrasaleem.bs98@gmail.com'
+};
+
 export const SKILLS: Skill[] = [
   { id: '1', name: 'Network Security', progress: 75, category: 'Defensive' },
   { id: '2', name: 'Penetration Testing', progress: 45, category: 'Offensive' },
@@ -48,7 +54,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        value: 'https://cdn-icons-png.flaticon.com/512/4348/4348490.png', // Placeholder for Fox reading manual
+        value: 'https://placehold.co/400x400/f97316/ffffff?text=Fox+Reading+Manual', // Placeholder for Fox reading manual
         alt: 'Fox reading a manual'
       },
       {
@@ -121,7 +127,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: 'image',
-        value: 'https://cdn-icons-png.flaticon.com/512/2315/2315445.png', // Placeholder for Fox with headset
+        value: 'https://placehold.co/400x400/f97316/ffffff?text=Fox+With+Headset', // Placeholder for Fox with headset
         alt: 'Fox with headset'
       },
       {
