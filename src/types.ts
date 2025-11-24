@@ -1,3 +1,4 @@
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -30,6 +31,15 @@ export interface Project {
   status: 'In Progress' | 'Completed' | 'Planned';
   imageUrl: string;
   githubUrl?: string;
+}
+
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  imageUrl: string; // Thumbnail or full image of the cert
+  credentialUrl?: string; // URL to verify (optional)
 }
 
 export enum ChatRole {
