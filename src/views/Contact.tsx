@@ -3,7 +3,13 @@ import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import { SOCIAL_LINKS } from '../constants';
 
 const Contact: React.FC = () => {
-  const [showEmail, setShowEmail] = useState(false); // <-- added state
+  const [showEmail, setShowEmail] = useState(false);
+
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowEmail(prev => !prev);
+    window.location.href = `mailto:${SOCIAL_LINKS.email}`; // opens mail client if available
+  };
 
   return (
     <div className="min-h-screen pt-24 pb-12 px-4">
@@ -53,7 +59,7 @@ const Contact: React.FC = () => {
           {/* Email Card */}
           <div className="group relative bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-fox-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
             <button 
-              onClick={() => setShowEmail(prev => !prev)}
+              onClick={handleEmailClick}
               className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mb-6 text-white group-hover:bg-red-500 group-hover:text-white transition-colors duration-300"
             >
               <Mail className="w-8 h-8" />
@@ -75,12 +81,17 @@ const Contact: React.FC = () => {
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
             Whether it's a security audit, a data analysis project, or just a chat about the latest in InfoSec, I'd love to hear from you.
           </p>
-          <a 
-            href={`mailto:${SOCIAL_LINKS.email}`}
+          <button
+            onClick={handleEmailClick}
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-fox-600 hover:bg-fox-700 rounded-full transition-colors shadow-lg shadow-fox-500/20"
           >
             Get in Touch
-          </a>
+          </button>
+          {showEmail && (
+            <p className="text-gray-200 text-sm font-medium mt-4">
+              {SOCIAL_LINKS.email}
+            </p>
+          )}
         </div>
       </div>
     </div>
