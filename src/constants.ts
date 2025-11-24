@@ -1,5 +1,5 @@
 
-import { BlogPost, Project, Skill } from './types';
+import { BlogPost, Project, Skill, Certificate } from './types';
 
 export const SOCIAL_LINKS = {
   github: 'https://github.com/BushraSaleem98',
@@ -16,6 +16,27 @@ export const SKILLS: Skill[] = [
   { id: '6', name: 'Web App Security (OWASP)', progress: 40, category: 'Offensive' },
   { id: '7', name: 'SIEM (Splunk/Elastic)', progress: 30, category: 'Defensive' },
   { id: '8', name: 'SQL', progress: 95, category: 'Languages' },
+];
+
+export const CERTIFICATES: Certificate[] = [
+  {
+    id: '1',
+    title: 'Associate Data Analyst in SQL',
+    issuer: 'DataCamp',
+    date: 'Sep 03, 2025',
+    // You should take a screenshot of your PDF and put the link here for the thumbnail
+    imageUrl: 'https://placehold.co/600x400/22c55e/ffffff?text=DataCamp+Certificate', 
+    credentialUrl: 'https://www.datacamp.com/completed/statement-of-accomplishment/track/d46d339faa4b65a6e3c24f2657ff175e917586c6?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa&utm_source=linkedin'
+  },
+  {
+    id: '2',
+    title: 'Example Certificate (Manual Upload)',
+    issuer: 'Course Provider',
+    date: 'Aug 2024',
+    // For certificates without a link, this image will open when clicked
+    imageUrl: 'https://placehold.co/600x400/1e293b/ffffff?text=Certificate+Image',
+    // No credentialUrl means the button will say "View Certificate" and open the image
+  }
 ];
 
 // ORDER RULE: Add NEW posts to the END of this array.
