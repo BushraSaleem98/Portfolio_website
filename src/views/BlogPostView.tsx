@@ -1,46 +1,52 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { BLOGS } from "../constants";
-import ReactMarkdown from "react-markdown";
+// src/views/BlogPostView.tsx
 
-const BlogPostView: React.FC = () => {
-  const { id } = useParams();
-  const blog = BLOGS.find((b) => b.slug === id);
+import { useParams, Link } from "react-router-dom";
+import { blogs } from "../blogs";
 
-  const [content, setContent] = useState("");
+const BlogPostView = () => {
+  const { slug } = useParams();
 
-  useEffect(() => {
-    if (blog) {
-      import(`../blogs/${blog.slug}.md`)
-        .then((res) => fetch(res.default))
-        .then((res) => res.text())
-        .then((text) => setContent(text));
-    }
-  }, [blog]);
+  // Find the blog by its slug
+  const blog = blogs.find((b) => b.meta.slug === slug);
 
-  if (!blog)
+  // If blog does not exist, show 404 style message
+  if (!blog) {
     return (
-      <div className="pt-32 text-center text-white">Blog not found...</div>
+      <div className="blog-not-found">
+        <h2>Blog Not Found</h2>
+        <p>The blog you're looking for does not exist.</p>
+        <Link to="/journey" className="back-btn">
+          Back to Journey
+        </Link>
+      </div>
     );
+  }
 
   return (
-    <div className="min-h-screen pt-24 pb-12 px-4">
-      <div className="max-w-3xl mx-auto">
-        <img
-          src={blog.coverImage}
-          alt={blog.title}
-          className="rounded-xl w-full h-64 object-cover mb-8"
-        />
-
-        <span className="text-fox-500 text-sm font-bold">{blog.tag}</span>
-        <h1 className="text-4xl font-bold text-white mb-4">{blog.title}</h1>
-        <p className="text-slate-600 mb-10">
-          {new Date(blog.date).toDateString()}
+    <div className="blogpost-container">
+      <div className="blogpost-hero">
+        <h1>{blog.meta.title}</h1>
+        <p className="post-meta">
+          <span>{blog.meta.tag}</span> · <span>{blog.meta.date}</span>
         </p>
 
-        <article className="prose prose-invert prose-fox max-w-none">
-          <ReactMarkdown>{content}</ReactMarkdown>
-        </article>
+        <img
+          src={blog.meta.cover}
+          alt={blog.meta.title}
+          className="blogpost-cover"
+        />
+      </div>
+
+      {/* Blog Content Rendered from Markdown */}
+      <div
+        className="blogpost-content"
+        dangerouslySetInnerHTML={{ __html: blog.content }}
+      />
+
+      <div className="back-section">
+        <Link to="/journey" className="back-btn">
+          ← Back to Journey
+        </Link>
       </div>
     </div>
   );
