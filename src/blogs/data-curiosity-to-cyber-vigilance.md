@@ -1,9 +1,9 @@
----
+--- 
 title: "From Data Curiosity to Cyber Vigilance: The Pivot"
 slug: "data-curiosity-to-cyber-vigilance"
 tag: "CAREER"
 date: "2025-01-18"
-cover: "/assets/blog-images/data-curiosity-cover.jpg"
+cover: "/blog-images/data-curiosity-cover.jpg"
 description: "How my path shifted toward security — why I'm trading SQL queries for SIEM logs and how my data background helps."
 ---
 
@@ -15,7 +15,7 @@ In the world of technology, most career journeys begin with fascination — fasc
 
 ## 🦊 How My Story Evolved
 
-![Fox](/assets/blog-images/fox1.png)
+![Fox](/blog-images/manual_reading_fox.png)
 
 But as I dug deeper into the world of systems, networks, and applications, I started noticing something:  
 **Data is only valuable when it’s protected.**  
@@ -36,7 +36,7 @@ That’s where cybersecurity found me.
 
 ## 📊 How My Data Background Helps in Security
 
-![Fox](/assets/blog-images/fox2.png)
+![Fox](/blog-images/teen_fox.png)
 
 - ► SQL helps me investigate incidents faster.  
 - ► Python automates threat detection.  
