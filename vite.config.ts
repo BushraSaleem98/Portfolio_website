@@ -1,23 +1,27 @@
-import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
+// vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import mdPlugin from "vite-plugin-markdown";
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      server: {
-        port: 3000,
-        host: '0.0.0.0',
+export default defineConfig({
+  plugins: [
+    react(),
+
+    // Markdown loader
+    mdPlugin({
+      mode: ["html", "toc", "meta"], 
+      markdownItOptions: {
+        html: true,
+        linkify: true,
+        typographer: true,
       },
-      plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, '.'),
-        }
-      }
-    };
+    }),
+  ],
+
+  // Allow images from public folder
+  publicDir: "public",
+
+  server: {
+    port: 5173,
+  },
 });
