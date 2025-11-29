@@ -6,15 +6,9 @@ import path from "path";
 export default defineConfig({
   plugins: [
     react(),
-    mdPlugin(), // ✅ call as a function without any options
+    mdPlugin(), // works with Vite 4.x
   ],
   publicDir: "public",
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
-  server: {
-    port: 5173,
-  },
+  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
+  server: { port: 5173 },
 });
