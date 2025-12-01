@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Award, ExternalLink, Eye, CheckCircle } from 'lucide-react';
 import { SKILLS, CERTIFICATES } from '../constants';
@@ -9,7 +8,7 @@ const Skills: React.FC = () => {
   return (
     <div className="min-h-screen pt-24 pb-12 px-4">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Technical Skills Section */}
         <div className="mb-16">
           <div className="mb-12">
@@ -69,7 +68,7 @@ const Skills: React.FC = () => {
                 </h3>
                 <p className="text-sm text-gray-400 mb-6">{cert.issuer}</p>
 
-                {/* Certificate Preview/Thumbnail area */}
+                {/* Certificate Preview/Thumbnail */}
                 <div className="w-full h-32 bg-slate-800 rounded-lg mb-6 overflow-hidden relative">
                    <img src={cert.imageUrl} alt={cert.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity" />
                    {cert.credentialUrl && (
