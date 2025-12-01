@@ -1,4 +1,13 @@
-Becoming a SOC Analyst Without Breaking the Pocket: A Complete Free Roadmap
+---
+title: "Becoming a SOC Analyst Without Breaking the Pocket"
+slug: "free-soc-roadmap"
+tag: "CAREER"
+date: "2025-02-01"
+cover: "/blog-images/soc-roadmap.jpg"
+description: "A complete free roadmap to become a SOC Analyst without spending money."
+---
+
+# Becoming a SOC Analyst Without Breaking the Pocket: A Complete Free Roadmap
 
 Breaking into Cybersecurity—especially the SOC Analyst role—often looks expensive. Paid bootcamps, certifications, and labs can cost hundreds or even thousands of dollars. But the truth is this:
 
@@ -21,160 +30,75 @@ This roadmap flows from beginner → intermediate → job-ready, covering theory
 
 Every resource below is completely free.
 
-1. Foundations: Build Strong Basics
-Google Cybersecurity Professional Certificate (FREE in Pakistan)
+1. Foundations: Build Strong Basics  
+Google Cybersecurity Professional Certificate (FREE in Pakistan)  
+🔗 https://www.coursera.org/professional-certificates/google-cybersecurity  
 
-Comprehensive beginner-to-intermediate cybersecurity program.
-🔗 https://www.coursera.org/professional-certificates/google-cybersecurity
+Cisco NetAcad – Introduction to Cybersecurity (FREE)  
+🔗 https://www.netacad.com/courses/introduction-to-cybersecurity  
 
-Cisco NetAcad – Introduction to Cybersecurity (FREE)
+GeeksforGeeks – Computer Networks  
+🔗 https://www.geeksforgeeks.org/computer-network-tutorials/  
 
-Clear explanation of cyber threats, attacks, and defenses.
-🔗 https://www.netacad.com/courses/introduction-to-cybersecurity
+GeeksforGeeks – Cyber Security Skill-Up  
+🔗 https://www.geeksforgeeks.org/courses/cyber-security-skill-up  
 
-GeeksforGeeks – Computer Networks (FREE)
+2. SOC Fundamentals  
+Cybrary – SOC Analyst Learning Path  
+🔗 https://www.cybrary.it/  
 
-Structured theory for networking fundamentals.
-🔗 https://www.geeksforgeeks.org/computer-network-tutorials/
+GFG – Ethical Hacking Tutorials  
+🔗 https://www.geeksforgeeks.org/ethical-hacking-tutorial/  
 
-GeeksforGeeks – Cyber Security Skill-Up Track (FREE)
+3. Networking & Operating Systems  
+🔗 https://www.geeksforgeeks.org/computer-network-tutorials/  
+🔗 https://www.geeksforgeeks.org/computer-security-overview/  
 
-Perfect for beginners entering security.
-🔗 https://www.geeksforgeeks.org/courses/cyber-security-skill-up
+4. Blue Team Skills  
+TryHackMe Blue Team Path  
+🔗 https://tryhackme.com  
 
-2. SOC Fundamentals (Your Core Knowledge)
-Cybrary – SOC Analyst Learning Path (FREE)
+HackTricks Training  
+🔗 https://training.hacktricks.xyz/  
 
-Covers SIEM, IR, logs, SOC processes.
-🔗 https://www.cybrary.it/
+5. SIEM Mastery  
+Microsoft Sentinel  
+🔗 https://learn.microsoft.com/en-us/training/paths/explore-microsoft-sentinel/  
 
-GeeksforGeeks – Ethical Hacking & Security Tutorials
+Splunk Work+  
+🔗 https://workplus.splunk.com/  
 
-Short, clear overviews of foundational security topics.
+6. EDR Tools  
+Wazuh  
+🔗 https://documentation.wazuh.com/  
 
-Ethical Hacking: https://www.geeksforgeeks.org/ethical-hacking-tutorial/
+Elastic Security  
+🔗 https://www.elastic.co/security  
 
-Cyber Crime: https://www.geeksforgeeks.org/cyber-crime/
+7. Threat Intelligence  
+MITRE ATT&CK  
+🔗 https://attack.mitre.org/  
 
-Security Testing: https://www.geeksforgeeks.org/security-testing/
+AlienVault OTX  
+🔗 https://otx.alienvault.com/  
 
-3. Networking & Operating Systems (Must-Have for SOC)
-GFG – Computer Network Tutorials
+8. ICS/OT Security  
+OPSWAT Academy (FREE)  
 
-🔗 https://www.geeksforgeeks.org/computer-network-tutorials/
+9. Python for SOC  
+ThePythonCode  
+🔗 https://thepythoncode.com/topic/ethical-hacking  
 
-GFG – Computer Security Overview
+10. Bonus Udemy Free Courses  
+Search for: SOC, SIEM, Cybersecurity, Incident Response
 
-🔗 https://www.geeksforgeeks.org/computer-security-overview/
+🧪 Hands-On SOC Projects  
+- SIEM dashboards  
+- Log analysis  
+- Threat intelligence reports  
+- SOC lab setups  
+- Malware traffic analysis  
 
-4. Blue Team Skills (Defensive Cybersecurity)
-TryHackMe – Blue Team Path (FREE Rooms Available)
-
-Learn SOC tools, forensics, Windows/Linux security, logs.
-🔗 https://tryhackme.com
-
-HackTricks – Free Training
-
-Advanced practical content on attack detection, forensics, privilege escalation.
-🔗 https://training.hacktricks.xyz/
-
-5. SIEM Mastery (The Most Important SOC Skill)
-Microsoft Sentinel Free Labs
-
-Hands-on SIEM dashboards and KQL queries.
-🔗 https://learn.microsoft.com/en-us/training/paths/explore-microsoft-sentinel/
-
-Splunk Work+ Free Learning
-
-Learn log analysis and alert creation.
-🔗 https://workplus.splunk.com/
-
-6. EDR Tools (Endpoint Detection & Response)
-Wazuh (Free & Open Source)
-
-Perfect for building home labs.
-🔗 https://documentation.wazuh.com/
-
-Elastic Security (Free Tier)
-
-Industry-standard for threat detection.
-🔗 https://www.elastic.co/security
-
-7. Threat Intelligence
-MITRE ATT&CK Framework
-
-Understand attacker tactics & techniques.
-🔗 https://attack.mitre.org/
-
-AlienVault OTX
-
-Live threat feeds & IoCs.
-🔗 https://otx.alienvault.com/
-
-8. ICS/OT Security (Bonus but High Value)
-
-The OPSWAT Academy courses are free and industry-recognized:
-
-Metadefender MFT End-User Guide
-https://opswatacademy.com/courses/metadefender-mft-end-user-guide
-
-Metadefender Kiosk End-User Guide
-https://opswatacademy.com/courses/metadefender-kiosk-end-user-guide
-
-Email Security
-https://opswatacademy.com/courses/metadefender-email-security-end-user-guide
-
-Introduction to CIP (Critical Infrastructure Protection)
-https://opswatacademy.com/courses/introduction-to-cip
-
-9. Python for SOC (Optional but Powerful Skill)
-ThePythonCode – Ethical Hacking with Python
-
-For automation, log parsing, malware basics.
-🔗 https://thepythoncode.com/topic/ethical-hacking
-
-10. Bonus: Udemy Free Courses
-
-Search for these keywords:
-
-SOC Analyst
-Cybersecurity
-SIEM
-Splunk
-Incident Response
-Threat Intelligence
-
-
-Udemy rotates free coupons daily.
-
-🧪 Hands-On SOC Projects for Your Portfolio
-
-Once your theory is solid, build projects like:
-
-Log analysis reports
-
-SIEM dashboards (Splunk/Sentinel)
-
-Threat intelligence research
-
-Incident response simulations
-
-Home SOC lab (Wazuh/Elastic)
-
-Malware traffic analysis (using safe datasets)
-
-If you want, I can generate step-by-step SOC project templates.
-
-🏁 Final Thoughts
-
-Becoming a SOC Analyst does not require money—only consistency.
-
-By following this roadmap, you’ll develop:
-
-✅ Strong cybersecurity theory
-✅ Practical blue-team skills
-✅ SIEM experience
-✅ Threat intelligence skills
-✅ A full SOC-ready portfolio
-
-Everything above is 100% free.
+🏁 Final Thoughts  
+Everything listed above is **100% free**.  
+Follow it consistently and you'll become SOC-ready.
