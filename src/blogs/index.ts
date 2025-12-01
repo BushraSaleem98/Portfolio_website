@@ -2,6 +2,7 @@
 import dataCuriosity from "./data-curiosity-to-cyber-vigilance.md";
 import secondBlog from "./second-blog.md";
 import thirdBlog from "./third-blog.md";
+import freeRoadmap from "./Free_Roadmap.md";
 
 export interface BlogMeta {
   slug: string;
@@ -9,7 +10,7 @@ export interface BlogMeta {
   date: string;
   tag: string;
   description: string;
-  cover: string; // now stored in public/blog-images
+  cover: string;
 }
 
 export interface BlogData {
@@ -20,18 +21,18 @@ export interface BlogData {
 export const blogs: BlogData[] = [
   {
     meta: {
-      slug: "data-curiosity-to-cyber-vigilance",
+      slug: dataCuriosity.frontmatter.slug,
       title: dataCuriosity.frontmatter.title,
       date: dataCuriosity.frontmatter.date,
       tag: dataCuriosity.frontmatter.tag,
       description: dataCuriosity.frontmatter.description,
-      cover: dataCuriosity.frontmatter.cover,  // "/blog-images/data-curiosity-cover.jpg"
+      cover: dataCuriosity.frontmatter.cover,
     },
     content: dataCuriosity.html,
   },
   {
     meta: {
-      slug: "second-blog",
+      slug: secondBlog.frontmatter.slug,
       title: secondBlog.frontmatter.title,
       date: secondBlog.frontmatter.date,
       tag: secondBlog.frontmatter.tag,
@@ -42,7 +43,7 @@ export const blogs: BlogData[] = [
   },
   {
     meta: {
-      slug: "third-blog",
+      slug: thirdBlog.frontmatter.slug,
       title: thirdBlog.frontmatter.title,
       date: thirdBlog.frontmatter.date,
       tag: thirdBlog.frontmatter.tag,
@@ -50,5 +51,16 @@ export const blogs: BlogData[] = [
       cover: thirdBlog.frontmatter.cover,
     },
     content: thirdBlog.html,
+  },
+  {
+    meta: {
+      slug: freeRoadmap.frontmatter.slug,
+      title: freeRoadmap.frontmatter.title,
+      date: freeRoadmap.frontmatter.date,
+      tag: freeRoadmap.frontmatter.tag,
+      description: freeRoadmap.frontmatter.description,
+      cover: freeRoadmap.frontmatter.cover,
+    },
+    content: freeRoadmap.html,
   },
 ];
